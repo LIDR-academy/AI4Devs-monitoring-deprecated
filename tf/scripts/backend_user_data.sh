@@ -16,5 +16,8 @@ docker build -t lti-backend .
 # Ejecutar el contenedor Docker
 docker run -d -p 8080:8080 lti-backend
 
+# Instalar Datadog Agent
+DD_AGENT_MAJOR_VERSION=7 DD_API_KEY=YOUR_DATADOG_API_KEY DD_SITE="datadoghq.com" bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script.sh)"
+
 # Timestamp to force update
 echo "Timestamp: ${timestamp}"
