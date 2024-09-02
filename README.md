@@ -160,3 +160,7 @@ POST http://localhost:3010/candidates
 }
 ```
 
+## Datadog
+
+He integrado mis claves AWS y Datadog en el código de la infraestructura de Terraform.
+He añadido el provider de Datadog, así como las diferentes permisos y políticas en @tf/iam.tf para que todo funcionara. Sin embargo, al hacer un Terraform (o Tofu) plan, me da un error 403 al mi usuario intentar usar "lti-project-ec2-role". Me he quedado atascado por demasiado tiempo y ya no he conseguido terminar el ejercicio.
